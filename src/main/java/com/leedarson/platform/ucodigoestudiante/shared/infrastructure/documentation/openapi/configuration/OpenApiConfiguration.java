@@ -39,9 +39,10 @@ public class OpenApiConfiguration {
                         .license(new License().name("Apache 2.0")
                                 .url("https://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
-                        .description("ACME Learning Platform wiki Documentation")
-                        .url("https://acme-learning-platform.wiki.github.io/docs"));
+                        .description("LEEDARSON Platform wiki Documentation")
+                        .url("https://www.leedarson.com/"));
 
+        /*
         // Add security scheme
 
         final String securitySchemeName = "bearerAuth";
@@ -55,9 +56,9 @@ public class OpenApiConfiguration {
                                         .type(SecurityScheme.Type.HTTP)
                                         .scheme("bearer")
                                         .bearerFormat("JWT")));
+        * */
 
         // Return OpenAPI configuration object with all the settings
-
         return openApi;
     }
 }
